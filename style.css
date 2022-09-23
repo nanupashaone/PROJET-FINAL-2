@@ -1,0 +1,446 @@
+* body {
+    justify-content: center;
+    /* background-image: radial-gradient(circle, #ffffff 0%, #0202024b 100%); */
+    background-image: url("https://zupimages.net/up/22/37/gdke.jpg");
+    animation: scroll 125s linear infinite;
+     font-family: 'Vidaloka', serif;
+     
+}
+
+
+
+
+#entête {
+  font-size: 55px;
+  font-family: 'Vidaloka', serif; 
+  
+}
+
+/* BARRE DE NAVIGATION */
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.925);
+    font-size: 28px;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.185);
+    text-align: center; 
+    width: 100%;
+}
+
+@media screen and (max-width:1024px) {
+  ul {
+      width: 1024px;
+      
+      
+  }
+
+}
+
+
+li {
+    float: left;
+    border: #ffffff solid 5px;
+    
+    
+}
+
+li a {
+    display: block;
+    color: white; 
+    text-align: center;
+     padding: 14px 16px; 
+    padding-left: 35px;
+    padding-right: 40px;
+    text-decoration: none;
+ 
+}
+
+
+
+
+
+
+li a:hover {
+    background-color: rgba(255, 255, 255, 0.233);
+    color: rgb(255, 255, 255);
+    
+}
+
+
+
+/* BODY */
+
+h1 {
+    border-radius: 50px;
+    height: 50px;
+    padding-top: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.39);
+    animation-name: example;
+    animation-duration: 5s;
+    box-sizing: 250px;
+    animation-iteration-count: 1;
+}
+
+@keyframes example {
+    0%   {background-color: rgb(0, 0, 0);}
+    25%  {background-color: rgb(255, 255, 255);}
+    50%  {background-color: rgb(0, 0, 0);}
+    100% {background-color: rgba(255, 255, 255, 0.521);}
+    from {
+        margin-left: 100%;
+        width: 300%;
+        
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+        
+      }
+}
+
+#tableau  {
+    
+    border: 50px;
+    margin-top: 80px;
+    border: 15px solid;
+    width: 1610px;
+    height: 598px;
+    border-radius: 20px;
+    animation: fadeInRight 5s ease-in-out; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(300px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+/* BLOG EXPERIENCE BRUSSELS */ 
+
+h2 {
+    font-size: 56px;
+    text-align: center;
+    text-transform: uppercase;
+    /* background-color: rgb(255, 249, 249); */
+    color: rgb(255, 255, 255);
+    background: linear-gradient(90deg, #000000,#ffffff,#000000,#000000);
+    background-repeat: repeat;
+    background-size: 80%; 
+    animation: animate 16s infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    padding-top: 30px;
+    
+}
+
+@keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  } 
+
+#NavBlog {
+    background-color:linear-gradient(269deg,#2744c7,#220a3a,#eba7ba,#41e77a); 
+   
+    
+}
+
+h3 {
+    font-size: 38px;
+    padding-bottom: 60px;
+    padding-top: 20px;
+}
+
+
+/* Animation Titre */
+
+h3 {
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-name: slidein;
+    text-align: center;
+  }
+  
+
+  
+    article {
+      margin-left: 20px;
+      margin-right: 20px;
+        font-size: 32px;
+        text-align: justify;
+        /* background-color: linear-gradient(0deg,#000000,#ffffff); */
+        background-color: rgba(248, 248, 248, 0.281);
+        color: rgb(0, 0, 0);
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+        border: 2px; 
+        border-style: solid;
+        border-color:black; 
+        -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 8px 9px rgba(0,0,0,0.17); 
+box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 8px 9px rgba(0,0,0,0.17);
+    }
+
+    /* IMAGE DEFILEMENT */
+    .d1{
+      width: 576px;
+      height: 432px;
+      margin: 50px auto;
+      box-shadow: 0px 15px 10px -5px #777;
+      background-color: #EDEDED;
+      background-size: contain;
+      animation: fondu 15s ease-in-out infinite both;
+      float: left;
+      display: block;
+      margin-left: 220px;
+      border: 4px;
+      border-style: solid;
+      border-radius: 30px;
+      
+      
+  }
+  .conteneur{
+      max-width: 576px;
+      margin: 50px auto;
+  }
+  .d2{
+      width: 100%;
+      height: 0px;
+      padding-top: 75%;
+      box-shadow: 0px 0px 10px #777;
+      background-color: #EDEDED;
+      background-size: contain;
+      animation: fondu 15s ease-in-out infinite both;
+      display: block;
+      margin-left: 320px;
+      border: 4px;
+      border-style: solid;
+      border-radius: 30px;
+      
+  } 
+  .d1:hover, .d2:hover{
+      animation-play-state: paused;
+  }
+  @keyframes fondu{
+      0%{background-image: url("https://zupimages.net/up/22/37/c22l.png");}
+      33.33%{background-image: url("https://zupimages.net/up/22/37/nst8.png");}
+      66.67%{background-image: url("https://zupimages.net/up/22/37/8bv4.png");}
+      100%{background-image: url("https://zupimages.net/up/22/37/41cd.png");}
+  }
+
+      
+  
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+
+
+
+.area{
+    background: #998074;  
+    background: -webkit-linear-gradient(to left, #0710b3, #4e54c8);  
+    width: 100%;
+    height:100%;
+}
+
+
+/* Partie Interview */
+
+#titreIntitulé {
+  font-weight: bold;
+  text-align: center;
+}
+
+
+#intitulé {
+  font-size: 29px;
+  
+  text-align: justify;
+  margin-top: 80px;
+  border: solid 3px black;
+  border-radius: 15px;
+  color: #000000;
+  width: 80%;
+  margin: 30px auto;
+  padding: 10px 10px 5px 5px;
+  background-color: #ffffff;
+  /*¨Animation de fond */
+ /* animation: scroll 70s linear infinite; */
+  
+  
+}
+
+.styleTitre {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@keyframes scroll {
+   100%{
+    background-position:0px -3000px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 200s linear infinite;
+  }
+}
+
+
+
+#Description {
+  font-size: 24px;
+  text-align: justify;
+  border: solid 2px black;
+  border-radius: 15px;
+  width: 30%;
+  background-image: url('https://zupimages.net/up/22/37/rq9f.jpg') ;
+  
+  padding: 5px 10px 5px 5px;
+  margin-top: 50px;
+  margin-left: 10px;
+  
+  
+}
+
+
+.SlideDroite {
+  font-size: 24px;
+  text-align: justify;
+  width: 80%;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 360px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: solid 2px black;
+  border-radius: 10px;
+  background: #C9CCD3;
+ background-image: url('https://zupimages.net/up/22/37/gzeu.jpg');
+ background-blend-mode: lighten; 
+ 
+  
+}
+
+.SlideGauche {
+  font-size: 24px;
+  border: solid 2px black;
+  width: 60%;
+  padding: 5px 10px 5px 5px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-image: url('https://zupimages.net/up/22/37/rq9f.jpg');
+}
+
+
+
+#global {
+  width: 100%;
+  height: 20%;
+  overflow: hidden;
+  background-color: #000;
+  text-align: center;
+  
+}
+
+.star-wars {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  perspective: 400px;
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 500%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 250%;
+  text-align: center;
+}
+
+.text {
+  position: relative;
+  top: -100px;
+  transform-origin: 50% 100%;
+  animation: text 60s linear;
+}
+
+@keyframes text {
+  0% {
+    top: 0;
+    transform: rotateX(20deg) translateZ(0);
+  }
+  100% {
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
+
+.fade {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  top: -25px;
+  background-image: linear-gradient(0deg 75% transparent black);
+}
+
+audio {
+  
+width: 700px;
+margin-left: 50%;
+margin-right: 50%;
+
+}
+/* PROJET */
+
+#projet {
+  font-size: 32px;
+  text-align: justify;
+  border: solid 3px black;
+  width: 80%;
+  margin: 50px auto;
+  margin-top: 100px;
+  padding: 10px 10px 10px 10px;
+  /* background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 80%); */
+  background-color: #EDEDED;
+  border-radius: 15px;
+}
+  
